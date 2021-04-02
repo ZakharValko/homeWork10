@@ -3,11 +3,30 @@ package ua.alevel.homework10;
 public class LandTransport extends Transport {
     int wheelsQuantity;
 
+
     public static Builder newBuilder(){
         return new LandTransport().new Builder();
     }
 
+    public Builder toBuilder(){
+        Builder newBuilder = new Builder();
+        newBuilder.power = this.power;
+        newBuilder.weight = this.weight;
+        newBuilder.width = this.width;
+        newBuilder.length = this.length;
+        newBuilder.height = this.height;
+        newBuilder.wheelsQuantity = this.wheelsQuantity;
+        return newBuilder;
+    }
+
     public class Builder {
+        private int power;
+        private int weight;
+        private int width;
+        private int length;
+        private int height;
+        private int wheelsQuantity;
+
         private Builder(){
 
         }
