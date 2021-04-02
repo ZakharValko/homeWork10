@@ -5,7 +5,7 @@ public class LandTransport extends Transport {
 
 
     public static Builder newBuilder(){
-        return new LandTransport().new Builder();
+        return new Builder();
     }
 
     public Builder toBuilder(){
@@ -19,7 +19,7 @@ public class LandTransport extends Transport {
         return newBuilder;
     }
 
-    public class Builder {
+    public static class Builder {
         private int power;
         private int weight;
         private int width;
@@ -27,42 +27,49 @@ public class LandTransport extends Transport {
         private int height;
         private int wheelsQuantity;
 
-        private Builder(){
-
+        private Builder builder(){
+            return this;
         }
 
         public Builder wheelsQuantity(int wheelsQuantity) {
-            LandTransport.this.wheelsQuantity = wheelsQuantity;
+            this.wheelsQuantity = wheelsQuantity;
             return this;
         }
 
         public Builder power(int power){
-            LandTransport.this.power = power;
+            this.power = power;
             return this;
         }
 
         public Builder weight(int weight){
-            LandTransport.this.weight = weight;
+            this.weight = weight;
             return this;
         }
 
         public Builder width(int width){
-            LandTransport.this.width = width;
+            this.width = width;
             return this;
         }
 
         public Builder length(int length){
-            LandTransport.this.length = length;
+            this.length = length;
             return this;
         }
 
         public Builder height(int height){
-            LandTransport.this.height = height;
+            this.height = height;
             return this;
         }
 
         public LandTransport build(){
-            return LandTransport.this;
+            LandTransport landTransport = new LandTransport();
+            landTransport.power = this.power;
+            landTransport.weight = this.weight;
+            landTransport.width = this.width;
+            landTransport.length = this.length;
+            landTransport.height = this.height;
+            landTransport.wheelsQuantity = this.wheelsQuantity;
+            return landTransport;
         }
     }
 }
