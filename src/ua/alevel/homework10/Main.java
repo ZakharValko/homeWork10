@@ -24,7 +24,6 @@ public class Main {
                 .wheelsQuantity(4)
                 .build();
 
-        System.out.println(landTransport.wheelsQuantity);
         landTransport.toBuilder().power(10);
     }
 }
