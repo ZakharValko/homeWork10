@@ -9,11 +9,7 @@ public class Saturn extends Planet implements PlanetInterface{
     }
 
     public Saturn(String name, int radius, double weight, double distanceFromTheSun, double gravity, int numberOfRings){
-        setName(name);
-        setRadius(radius);
-        setWeight(weight);
-        setDistanceFromTheSun(distanceFromTheSun);
-        setGravity(gravity);
+        super(name, radius, weight, distanceFromTheSun, gravity);
         this.numberOfRings = numberOfRings;
     }
 

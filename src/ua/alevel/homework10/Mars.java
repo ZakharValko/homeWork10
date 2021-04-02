@@ -9,12 +9,8 @@ public class Mars extends Planet implements PlanetInterface{
     }
 
     public Mars(String name, String secondName, int radius, double weight, double distanceFromTheSun, double gravity){
-        setName(name);
+        super(name, radius, weight, distanceFromTheSun, gravity);
         this.secondName = secondName;
-        setRadius(radius);
-        setWeight(weight);
-        setDistanceFromTheSun(distanceFromTheSun);
-        setGravity(gravity);
     }
 
 

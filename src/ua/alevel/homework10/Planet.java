@@ -7,6 +7,14 @@ public class Planet {
     private double distanceFromTheSun;
     private double gravity;
 
+    public Planet(String name, int radius, double weight, double distanceFromTheSun, double gravity) {
+        this.name = name;
+        this.radius = radius;
+        this.weight = weight;
+        this.distanceFromTheSun = distanceFromTheSun;
+        this.gravity = gravity;
+    }
+
     public String getName(){
         return name;
     }
