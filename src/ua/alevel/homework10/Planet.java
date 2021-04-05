@@ -1,5 +1,7 @@
 package ua.alevel.homework10;
 
+import java.util.Locale;
+
 public class Planet {
     private String name;
     private int radius;

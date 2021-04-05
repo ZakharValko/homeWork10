@@ -2,18 +2,16 @@ package ua.alevel.homework10;
 
 public enum PlanetEnum {
 
-    EARTH (1, "Earth"),
-    MARS (2, "Mars"),
-    SATURN (62, "Saturn"),
-    VENUS (0, "Venus"),
-    MERCURY (0, "Mercury");
+    EARTH (1),
+    MARS (2),
+    SATURN (62),
+    VENUS (0),
+    MERCURY (0);
 
     private int quantityOfSatellite;
-    private String name;
 
-    PlanetEnum(int quantityOfSatellite, String name) {
+    PlanetEnum(int quantityOfSatellite) {
         this.quantityOfSatellite = quantityOfSatellite;
-        this.name = name;
     }
 
     public int getQuantityOfSatellite(){

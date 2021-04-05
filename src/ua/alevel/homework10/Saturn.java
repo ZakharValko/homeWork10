@@ -3,6 +3,10 @@ package ua.alevel.homework10;
 public class Saturn extends Planet implements PlanetInterface{
     private int numberOfRings;
 
+    public void printQuantityOfSatellite(){
+        System.out.println(PlanetEnum.SATURN.getQuantityOfSatellite());
+    }
+
     @Override
     public void printCharacteristics(){
         System.out.println("Name of planet: " + getName() + ".\nRadius is " + getRadius() + ". \nWeight is " + getWeight() + "\nDistance from the sun is " + getDistanceFromTheSun() + "\nQuantity of rings: " + numberOfRings);

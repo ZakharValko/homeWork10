@@ -3,6 +3,10 @@ package ua.alevel.homework10;
 public class Mars extends Planet implements PlanetInterface{
     private String secondName;
 
+    public void printQuantityOfSatellite(){
+        System.out.println(PlanetEnum.MARS.getQuantityOfSatellite());
+    }
+
     @Override
     public void printCharacteristics(){
         System.out.println("Name of planet: " + getName() + " or " + secondName + ".\nRadius is " + getRadius() + ". \nWeight is " + getWeight() + "\nDistance from the sun is " + getDistanceFromTheSun());
