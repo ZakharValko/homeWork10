@@ -8,14 +8,6 @@ public class Earth extends Planet implements PlanetInterface{
         System.out.println("Name of planet: " + getName() + ".\nRadius is " + getRadius() + ". \nWeight is " + getWeight() + "\nDistance from the sun is " + getDistanceFromTheSun() + "\nQuantity of seas: " + quantityOfSeas);
     }
 
-//    public Earth(String name, int radius, double weight, double distanceFromTheSun, double gravity, int quantityOfSeas){
-//        setName(name);
-//        setRadius(radius);
-//        setWeight(weight);
-//        setDistanceFromTheSun(distanceFromTheSun);
-//        setGravity(gravity);
-//        this.quantityOfSeas = quantityOfSeas;
-//    }
     public Earth(String name, int radius, double weight, double distanceFromTheSun, double gravity, int quantityOfSeas){
         super(name, radius, weight, distanceFromTheSun, gravity);
         this.quantityOfSeas = quantityOfSeas;

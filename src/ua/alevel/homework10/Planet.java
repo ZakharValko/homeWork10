@@ -15,9 +15,7 @@ public class Planet {
         this.gravity = gravity;
     }
 
-    public String getName(){
-        return name;
-    }
+    public String getName(){ return name; }
 
     public void setName(String name){
         this.name = name;
@@ -64,5 +62,4 @@ public class Planet {
     public int diameterOfPlanet(int radius){
         return radius * 2;
     }
-
 }
