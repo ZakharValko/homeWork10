@@ -64,4 +64,18 @@ public class Planet {
     public int diameterOfPlanet(int radius){
         return radius * 2;
     }
+
+    @Override
+    public boolean equals(Object obj){
+        if(this == obj) return true;
+        if(obj == null) return false;
+        if(!(obj instanceof Planet)) return false;
+        Planet other = (Planet) obj;
+        if(this.radius != other.radius) return false;
+        if(this.weight != other.weight) return false;
+        if(this.gravity != other.gravity) return false;
+        if(!this.name.equals(other.name)) return false;
+        if(this.distanceFromTheSun != other.distanceFromTheSun) return false;
+        return true;
+    }
 }
