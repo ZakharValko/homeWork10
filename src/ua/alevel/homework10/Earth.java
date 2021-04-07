@@ -27,7 +27,6 @@ public class Earth extends Planet implements PlanetInterface{
     public boolean equals(Object obj){
         if(this == obj) return true;
         if(obj == null) return false;
-        if(!(obj instanceof Planet)) return false;
         if (!(obj instanceof Earth)) return false;
         Earth other = (Earth) obj;
         if(this.quantityOfSeas != other.quantityOfSeas) return false;

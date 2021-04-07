@@ -20,7 +20,6 @@ public class Venus extends Planet implements PlanetInterface{
     public boolean equals(Object obj){
         if(this == obj) return true;
         if(obj == null) return false;
-        if(!(obj instanceof Planet)) return false;
         if(!(obj instanceof Venus)) return false;
         Venus other = (Venus) obj;
         if(this.getRadius() != other.getRadius()) return false;
