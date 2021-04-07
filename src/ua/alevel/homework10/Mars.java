@@ -28,8 +28,9 @@ public class Mars extends Planet implements PlanetInterface{
         if(this == obj) return true;
         if(obj == null) return false;
         if(!(obj instanceof Planet)) return false;
-        Saturn other = (Saturn) obj;
-        if(this.secondName != secondName) return false;
+        if(!(obj instanceof Mars)) return false;
+        Mars other = (Mars) obj;
+        if(this.secondName != other.secondName) return false;
         if(this.getRadius() != other.getRadius()) return false;
         if(this.getWeight() != other.getWeight()) return false;
         if(this.getGravity() != other.getGravity()) return false;

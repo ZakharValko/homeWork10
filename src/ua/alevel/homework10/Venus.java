@@ -21,7 +21,8 @@ public class Venus extends Planet implements PlanetInterface{
         if(this == obj) return true;
         if(obj == null) return false;
         if(!(obj instanceof Planet)) return false;
-        Saturn other = (Saturn) obj;
+        if(!(obj instanceof Venus)) return false;
+        Venus other = (Venus) obj;
         if(this.getRadius() != other.getRadius()) return false;
         if(this.getWeight() != other.getWeight()) return false;
         if(this.getGravity() != other.getGravity()) return false;

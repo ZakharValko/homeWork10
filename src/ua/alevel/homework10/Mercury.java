@@ -20,6 +20,7 @@ public class Mercury extends Planet implements PlanetInterface{
         if(this == obj) return true;
         if(obj == null) return false;
         if(!(obj instanceof Planet)) return false;
+        if(!(obj instanceof Mercury)) return false;
         Mercury other = (Mercury) obj;
         if(this.getRadius() != other.getRadius()) return false;
         if(this.getWeight() != other.getWeight()) return false;

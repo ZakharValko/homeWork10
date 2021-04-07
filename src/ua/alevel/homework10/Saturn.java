@@ -27,6 +27,7 @@ public class Saturn extends Planet implements PlanetInterface{
         if(this == obj) return true;
         if(obj == null) return false;
         if(!(obj instanceof Planet)) return false;
+        if(!(obj instanceof Saturn)) return false;
         Saturn other = (Saturn) obj;
         if(this.numberOfRings != numberOfRings) return false;
         if(this.getRadius() != other.getRadius()) return false;
